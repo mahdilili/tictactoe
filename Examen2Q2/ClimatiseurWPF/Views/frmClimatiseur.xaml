@@ -1,0 +1,25 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClimatiseurWPF.Views"
+        xmlns:Models="clr-namespace:ClimatiseurWPF.Models" x:Name="frmClim" x:Class="ClimatiseurWPF.Views.frmClimatiseur"
+        mc:Ignorable="d"
+        Title="Informations sur le climatiseur..." Height="479" Width="456">
+    <Grid x:Name="grdClim" d:DataContext="{d:DesignInstance {x:Type Models:Climatiseur}}">
+        <Label x:Name="lblMarque" Content="Marque: " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="80" FontSize="16"/>
+        <Label x:Name="lblPrix" Content="Prix:" HorizontalAlignment="Left" Margin="10,163,0,0" VerticalAlignment="Top" Width="80" FontSize="16"/>
+        <Label x:Name="lblBTU" Content="BTU:" HorizontalAlignment="Left" Margin="10,247,0,0" VerticalAlignment="Top" Width="80" FontSize="16"/>
+        <Label x:Name="lblModèle" Content="Modèle" HorizontalAlignment="Left" Margin="10,79,0,0" VerticalAlignment="Top" Width="80" FontSize="16"/>
+        <Label x:Name="lblEntretien" Content="Entretien: " HorizontalAlignment="Left" Margin="10,332,0,0" VerticalAlignment="Top" Width="80" FontSize="16"/>
+        <TextBox x:Name="txtMarque" HorizontalAlignment="Center" Margin="0,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242" Height="42" Text="{Binding Marque}"/>
+        <TextBox x:Name="txtModèle" HorizontalAlignment="Center" Margin="0,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242" Height="42" Text="{Binding Modèle}"/>
+        <TextBox x:Name="txtPrix" HorizontalAlignment="Center" Margin="0,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242" Height="42" Text="{Binding Prix}"/>
+        <TextBox x:Name="txtBTU" HorizontalAlignment="Center" Margin="0,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242" Height="42" Text="{Binding BTU}"/>
+        <DatePicker x:Name="dateEntretien" HorizontalAlignment="Center" Margin="0,328,0,0" VerticalAlignment="Top" Height="40" Width="242" SelectedDate="{Binding DernierEntretien}"/>
+        <Button x:Name="btnOK" Content="_OK" HorizontalAlignment="Left" Margin="57,408,0,0" VerticalAlignment="Top" Height="30" Width="154" Click="btnOK_Click"/>
+        <Button x:Name="btnAnnuler" Content="_Annuler" HorizontalAlignment="Left" Margin="228,408,0,0" VerticalAlignment="Top" Height="30" Width="154" Click="btnAnnuler_Click"/>
+
+    </Grid>
+</Window>

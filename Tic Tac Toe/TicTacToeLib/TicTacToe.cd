@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="TicTacToeLib.TicTacToeLogique">
+    <Position X="7.5" Y="1.75" Width="3" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="TicTacToeLib.TicTacToeLogique.Jetons" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>TicTacToeLogique.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="TicTacToeLib.TicTacToeLogique.état" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>TicTacToeLogique.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAgAAgAAAAAAAAAAAAAAACAAEEAAAAADAAA=</HashCode>
+      <FileName>TicTacToeLogique.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

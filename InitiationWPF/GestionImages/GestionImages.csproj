@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\Bouton1.png" />
+    <None Remove="Images\Bouton2.png" />
+    <None Remove="Images\carré1.png" />
+    <None Remove="Images\carré2.png" />
+    <None Remove="Images\ellipse1.png" />
+    <None Remove="Images\ellipse2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Bouton1.png" />
+    <Resource Include="Images\Bouton2.png" />
+    <Resource Include="Images\carré1.png" />
+    <Resource Include="Images\carré2.png" />
+    <Resource Include="Images\ellipse1.png" />
+    <Resource Include="Images\ellipse2.png" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,76 @@
+﻿<Window x:Class="Théorie.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Théorie.Views"
+        mc:Ignorable="d"
+        Title="Introduction aux collections et à LINQ #1" Height="505.333" Width="636" ResizeMode="NoResize">
+    <Grid Margin="0,0,-5.333,7.333">
+        <GroupBox x:Name="grpEntrées" Header="Champs de saisie:" HorizontalAlignment="Left" Margin="5,-1,0,0" VerticalAlignment="Top" Height="115" Width="325">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="29*"/>
+                    <RowDefinition Height="30*"/>
+                    <RowDefinition Height="32*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="29*"/>
+                    <ColumnDefinition Width="75*"/>
+                    <ColumnDefinition Width="30*"/>
+                    <ColumnDefinition Width="80*"/>
+                    <ColumnDefinition Width="35*"/>
+                    <ColumnDefinition Width="65*"/>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="lbl1" Content="#1:" Margin="0,0,0.333,0.333"/>
+                <Label x:Name="lbl2" Content="#2:" Margin="0,29,0.333,0.333" Grid.RowSpan="2"/>
+                <Label x:Name="lbl3" Content="#3:" Grid.Row="1" Margin="0,29.667,0.333,0.333" Grid.RowSpan="2"/>
+                <TextBox x:Name="txtChamp1" TextWrapping="Wrap" Margin="3" Grid.Column="1"/>
+                <TextBox x:Name="txtChamp2" TextWrapping="Wrap" Margin="3" Grid.Row="1" Grid.Column="1"/>
+                <TextBox x:Name="txtChamp3" Grid.Row="2" TextWrapping="Wrap" Grid.Column="1" Margin="3"/>
+                <Label x:Name="lbl4" Content="#4:" Grid.Column="2" Margin="0,0,0,0.333"/>
+                <Label x:Name="lbl5" Content="#5:" Grid.Column="2" Margin="0,29,0,0.333" Grid.RowSpan="2"/>
+                <Label x:Name="lbl6" Content="#6:" Grid.Column="2" Grid.Row="1" Margin="0,29.667,0,0.333" Grid.RowSpan="2"/>
+                <TextBox x:Name="txtChamp4" Grid.Column="3" TextWrapping="Wrap" Margin="3"/>
+                <TextBox x:Name="txtChamp5" Grid.Column="3" TextWrapping="Wrap" Margin="3" Grid.Row="1"/>
+                <TextBox x:Name="txtChamp6" Grid.Column="3" Grid.Row="2" TextWrapping="Wrap" Margin="3"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="grpBoutons" Header="Déclenchement des actions:" HorizontalAlignment="Left" Margin="5,119,0,0" VerticalAlignment="Top" Height="156" Width="325">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="37*"/>
+                    <ColumnDefinition Width="39*"/>
+                    <ColumnDefinition Width="39*"/>
+                    <ColumnDefinition Width="41*"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btnExercice02"  Content="Exercice 02" Margin="2,2,3.6,1.6" Click="btnExercice02_Click"/>
+                <Button x:Name="btnExercice03" Content="Exercice 03" Grid.Row="1" RenderTransformOrigin="0.678,0.558" Margin="2,0,3.6,2.2" Height="29" VerticalAlignment="Bottom" Click="btnExercice03_Click"/>
+                <Button x:Name="btnExercice04" Content="Exercice 04" Grid.Row="1" RenderTransformOrigin="0.678,0.558" Margin="5,0,5,0" Height="29" VerticalAlignment="Center" Grid.Column="1" Click="btnExercice04_Click"/>
+                <Button x:Name="btnExercice05" Content="Exercice 05" Grid.Row="1" RenderTransformOrigin="0.678,0.558" Margin="76,0,13,0" Height="29" VerticalAlignment="Center" Grid.Column="1" Grid.ColumnSpan="2" Click="btnExercice05_Click"/>
+                <Button x:Name="btnExercice06" Content="Exercice 06" Grid.Row="1" RenderTransformOrigin="0.678,0.558" Margin="0,0,14,0" Height="29" VerticalAlignment="Center" Grid.Column="3" Click="btnExercice06_Click"/>
+                <Button x:Name="btnExercice07" Content="Exercice 07" Grid.Row="1" RenderTransformOrigin="0.678,0.558" Margin="0,31,14,0" Height="29" VerticalAlignment="Top" Grid.Column="3" Click="btnExercice07_Click" Grid.RowSpan="2"/>
+                <Button x:Name="btnExercice08" Content="Exercice 08" Grid.Row="3" RenderTransformOrigin="0.678,0.558" Margin="0,0,14,0" Height="29" VerticalAlignment="Center" Grid.Column="3" Click="btnExercice08_Click"/>
+                <Button x:Name="btnExercice09" Content="Exercice 09" Grid.Row="3" RenderTransformOrigin="0.678,0.558" Margin="5,0,6,0" Height="29" VerticalAlignment="Center" Grid.Column="2" Click="btnExercice09_Click"/>
+                <Button x:Name="btnExercice10" Content="Exercice 10" Grid.Row="3" RenderTransformOrigin="0.678,0.558" Margin="3,0,7,0" Height="29" VerticalAlignment="Center" Grid.Column="1" Click="btnExercice10_Click"/>
+                <Button x:Name="btnExercice11" Content="Exercice 11" Grid.Row="3" RenderTransformOrigin="0.678,0.558" Margin="2,0,4,0" Height="29" VerticalAlignment="Center" Click="btnExercice11_Click"/>
+                <Button x:Name="btnExercice12" Content="Exercice 12" Grid.Row="2" RenderTransformOrigin="0.678,0.558" Margin="6,0,0,0" Height="29" VerticalAlignment="Top" Click="btnExercice12_Click"/>
+                <Button x:Name="btnExercice13" Content="Exercice 13" Grid.Row="2" RenderTransformOrigin="0.678,0.558" Margin="4,0,6,0" Height="29" VerticalAlignment="Top" Grid.Column="1" Click="btnExercice13_Click"/>
+                <Button x:Name="btnExercice14" Content="Exercice 14" Grid.Row="2" RenderTransformOrigin="0.678,0.558" Margin="1,0,10,0" Height="29" VerticalAlignment="Top" Grid.Column="2" Click="btnExercice14_Click"/>
+                <Button x:Name="btnExercice16" Content="Exercice 16" RenderTransformOrigin="0.678,0.558" Margin="5,4,5,0" Height="29" VerticalAlignment="Top" Grid.Column="1" Click="btnExercice16_Click"/>
+                <Button x:Name="btnExercice20" Content="Exercice 20" RenderTransformOrigin="0.678,0.558" Margin="3,4,8,0" Height="29" VerticalAlignment="Top" Grid.Column="2" Click="btnExercice20_Click"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="grpRésultat" Header="Résultat:" HorizontalAlignment="Left" Margin="10,280,0,0" VerticalAlignment="Top" Height="175" Width="320">
+            <Grid>
+                <TextBox x:Name="txtRésultat" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" Margin="0,0,-182,0"/>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>
