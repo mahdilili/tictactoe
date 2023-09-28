@@ -1,0 +1,18 @@
+﻿################################################################################
+# Ce fichier .gitignore a été automatiquement créé par Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/Bibliothèques/CryptageConsole/bin/Debug/net5.0
+/Bibliothèques/.vs/Bibliothèques
+/Bibliothèques/CryptageConsole/obj
+/Bibliothèques/CryptageWPF/obj
+/Bibliothèques/ExercicesLib/bin/Debug/net5.0
+/Bibliothèques/ExercicesLib/obj
+/Classes statique et extensions/.vs
+/Classes statique et extensions/Théorie/bin/Debug/net5.0-windows
+/Classes statique et extensions/Théorie/obj
+/Compsante-minuterie/.vs/Compsante-minuterie
+/Compsante-minuterie/Minuterie/bin/Debug/net5.0-windows
+/Compsante-minuterie/Minuterie/obj
+/Examen2Q1/.vs/Examen2Q1
